@@ -509,7 +509,7 @@ class UI_LoadData(QtWidgets.QDialog):
         self.show()
 
     def selectFile(self):
-        fpath = QtWidgets.QFileDialog.getOpenFileName(self, 'Open File', '', 'Comma-separated values (*.csv)')
+        fpath = QtWidgets.QFileDialog.getOpenFileName(self, 'Open File', 'C:/Users/znw11/Documents/Zixuan/Optical_data/', 'Comma-separated values (*.csv)')
 
         if fpath[0]:
             self.label_filepath.setText(fpath[0])
