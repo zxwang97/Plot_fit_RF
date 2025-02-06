@@ -98,7 +98,7 @@ class UI_main(QtWidgets.QMainWindow):
 
             self.plot_all_data()
 
-            del self.LoadData_dialog
+        del self.LoadData_dialog
 
     def EditFileSelection(self):
         # Allow user to update details about the file selected.
@@ -122,7 +122,7 @@ class UI_main(QtWidgets.QMainWindow):
 
                 self.plot_all_data()
 
-            del self.EditData_dialog
+        del self.EditData_dialog
 
     def RemoveData(self):
         index = self.comboBox_ListDataName.currentIndex()
@@ -204,7 +204,7 @@ class UI_main(QtWidgets.QMainWindow):
 
                 self.plot_all_data()
 
-                del self.EditFitParams_dialog
+            del self.EditFitParams_dialog
 
     def SaveFitResult(self):
         if hasattr(self, 'SaveFitResult_dialog') and self.SaveFitResult_dialog.isVisible():
@@ -256,7 +256,7 @@ class UI_main(QtWidgets.QMainWindow):
             self.AspectRatio = self.EditGraphParams_dialog.AspectRatio
 
             self.plot_all_data()
-            del self.EditGraphParams_dialog
+        del self.EditGraphParams_dialog
 
     def SaveGraph(self):
         if hasattr(self, 'LoadData_dialog') or hasattr(self, 'EditGraphParams_dialog') or hasattr(self, 'EditData_dialog') or hasattr(self, 'EditFitParams_dialog') or hasattr(self, 'SaveFitResult_dialog'):
